@@ -4,16 +4,17 @@
 # Setup (one time):
 #   1. Go to your repo: Settings > Secrets and variables > Actions > New secret
 #      Name: AIOS_API_KEY   Value: <your key from the Ovyero dashboard>
-#   2. Commit this file. The action runs automatically on every push and PR.
+#   2. Commit this file. The action runs on every pull request and on pushes to
+#      your default branch (not on every branch push, so a PR is reviewed once).
 #
-# To block merges on a GATE finding, change fail-on-gate to: true
+# To block merges on a GATE finding, set the repo Variable AIOS_FAIL_ON_GATE=true.
 
 name: Ovyero Governance
 
 on:
-  push:
-    branches: ['**']
   pull_request:
+  push:
+    branches: [main, master]
 
 jobs:
   govern:
@@ -41,8 +42,11 @@ jobs:
           #   data_extraction · local_tooling · test_harness
           # An unknown name falls back to production (strict), never looser.
           INPUT_GOVERNANCE-PROFILE: production
-          INPUT_FAIL-ON-GATE: 'false'
-          INPUT_COMMENT-MODE: summary
+          # Block merges on GATE? Set the repo Variable AIOS_FAIL_ON_GATE=true
+          # (Settings > Secrets and variables > Actions > Variables). Default: report only.
+          INPUT_FAIL-ON-GATE: ${{ vars.AIOS_FAIL_ON_GATE || 'false' }}
+          # comment = post the verdict table on the PR; summary = job summary only.
+          INPUT_COMMENT-MODE: comment
           INPUT_MAX-FILES: '200'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
