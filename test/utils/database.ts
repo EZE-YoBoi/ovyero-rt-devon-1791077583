@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 rt-devon2 test org
 import { Container } from 'typedi';
 import { Connection, createConnection, useContainer } from 'typeorm';
 

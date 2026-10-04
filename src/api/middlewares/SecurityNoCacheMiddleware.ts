@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 rt-devon2 test org
 import * as express from 'express';
 import * as helmet from 'helmet';
 import { ExpressMiddlewareInterface, Middleware } from 'routing-controllers';

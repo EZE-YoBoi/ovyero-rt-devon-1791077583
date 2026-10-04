@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 rt-devon2 test org
 import { Application } from 'express';
 import * as http from 'http';
 import { bootstrapMicroframework } from 'microframework-w3tec';

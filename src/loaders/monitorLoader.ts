@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 rt-devon2 test org
 import basicAuth from 'express-basic-auth';
 import monitor from 'express-status-monitor';
 import { MicroframeworkLoader, MicroframeworkSettings } from 'microframework-w3tec';

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 rt-devon2 test org
 import { MigrationInterface, QueryRunner, TableForeignKey } from 'typeorm';
 
 export class AddUserRelationToPetTable1512663990063 implements MigrationInterface {

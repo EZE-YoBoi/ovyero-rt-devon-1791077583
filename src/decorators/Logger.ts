@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 rt-devon2 test org
 import { Container } from 'typedi';
 
 import { Logger as WinstonLogger } from '../lib/logger';

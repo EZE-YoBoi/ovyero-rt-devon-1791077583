@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 rt-devon2 test org
 import { Request } from 'express';
 import MockExpressRequest from 'mock-express-request';
 import { User } from 'src/api/models/User';

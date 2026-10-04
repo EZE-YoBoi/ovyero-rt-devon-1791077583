@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 rt-devon2 test org
 import { Logger } from '../../../src/lib/logger';
 
 export class LogMock extends Logger {

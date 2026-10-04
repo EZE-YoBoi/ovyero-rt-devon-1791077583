@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 rt-devon2 test org
 import { User } from '../../../src/api/models/User';
 import { UserService } from '../../../src/api/services/UserService';
 import { events } from '../../../src/api/subscribers/events';

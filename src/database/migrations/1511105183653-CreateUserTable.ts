@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 rt-devon2 test org
 import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
 export class CreateUserTable1511105183653 implements MigrationInterface {

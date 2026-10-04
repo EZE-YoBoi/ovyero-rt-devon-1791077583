@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 rt-devon2 test org
 import { EventSubscriber, On } from 'event-dispatch';
 
 import { Logger } from '../../lib/logger';

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 rt-devon2 test org
 import request from 'supertest';
 
 import { env } from '../../../src/env';

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 rt-devon2 test org
 import chalk from 'chalk';
 import commander from 'commander';
 import * as path from 'path';

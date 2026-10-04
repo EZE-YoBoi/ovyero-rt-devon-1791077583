@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 rt-devon2 test org
 import { Field, ID, ObjectType } from 'type-graphql';
 
 import { Pet } from './Pet';
