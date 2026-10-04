@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { GraphQLObjectType, GraphQLSchema } from 'graphql';
 import * as uuid from 'uuid';
 

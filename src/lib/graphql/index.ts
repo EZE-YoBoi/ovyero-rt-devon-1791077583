@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import DataLoader from 'dataloader';
 import { ObjectType } from 'typedi';
 import { getCustomRepository, getRepository, Repository } from 'typeorm';

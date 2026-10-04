@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
 export class CreateUserTable1511105183653 implements MigrationInterface {

@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { Request } from 'express';
 import MockExpressRequest from 'mock-express-request';
 import { User } from 'src/api/models/User';

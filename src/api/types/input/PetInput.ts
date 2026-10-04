@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { Field, InputType, Int } from 'type-graphql';
 
 import { Pet } from '../Pet';

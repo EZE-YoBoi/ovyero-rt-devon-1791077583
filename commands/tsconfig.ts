@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import * as jsonfile from 'jsonfile';
 import * as path from 'path';
 

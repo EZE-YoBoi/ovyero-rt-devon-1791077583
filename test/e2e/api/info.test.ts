@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import request from 'supertest';
 
 import { env } from '../../../src/env';

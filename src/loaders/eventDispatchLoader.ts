@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import glob from 'glob';
 import { MicroframeworkLoader, MicroframeworkSettings } from 'microframework-w3tec';
 

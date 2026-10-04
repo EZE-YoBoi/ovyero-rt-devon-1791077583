@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { Logger } from '../../../src/lib/logger';
 
 export class LogMock extends Logger {

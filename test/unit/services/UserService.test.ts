@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { User } from '../../../src/api/models/User';
 import { UserService } from '../../../src/api/services/UserService';
 import { events } from '../../../src/api/subscribers/events';

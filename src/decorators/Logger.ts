@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { Container } from 'typedi';
 
 import { Logger as WinstonLogger } from '../lib/logger';

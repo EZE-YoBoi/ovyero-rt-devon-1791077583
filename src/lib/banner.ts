@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { env } from '../env';
 import { Logger } from '../lib/logger';
 

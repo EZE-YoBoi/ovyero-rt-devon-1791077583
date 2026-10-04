@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { Type } from 'class-transformer';
 import { IsEmail, IsNotEmpty, IsUUID, ValidateNested } from 'class-validator';
 import {

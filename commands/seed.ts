@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import chalk from 'chalk';
 import commander from 'commander';
 import * as path from 'path';

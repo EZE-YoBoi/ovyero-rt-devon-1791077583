@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import * as nock from 'nock';
 import request from 'supertest';
 import { runSeed } from 'typeorm-seeding';
