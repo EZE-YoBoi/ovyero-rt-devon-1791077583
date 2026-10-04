@@ -8,6 +8,7 @@ import { Pet } from '../models/Pet';
 import { User } from '../models/User';
 import { PetRepository } from '../repositories/PetRepository';
 import { events } from '../subscribers/events';
+import { track } from '../../lib/analytics/client';
 
 @Service()
 export class PetService {
@@ -30,6 +31,13 @@ export class PetService {
                 userId: user.id,
             },
         });
+    }
+
+    public async search(q: string): Promise<Pet[]> {
+        this.log.info('Search pets', q);
+        const results = await this.petRepository.searchByName(q);
+        await track('pet.search', { q, hits: results.length });
+        return results;
     }
 
     public findOne(id: string): Promise<Pet | undefined> {
