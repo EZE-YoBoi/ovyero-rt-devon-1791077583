@@ -13,9 +13,9 @@ import { events } from '../subscribers/events';
 export class PetService {
 
     constructor(
-        @OrmRepository() private petRepository: PetRepository,
-        @EventDispatcher() private eventDispatcher: EventDispatcherInterface,
-        @Logger(__filename) private log: LoggerInterface
+        @OrmRepository() private readonly petRepository: PetRepository,
+        @EventDispatcher() private readonly eventDispatcher: EventDispatcherInterface,
+        @Logger(__filename) private readonly log: LoggerInterface
     ) { }
 
     public find(): Promise<Pet[]> {
@@ -33,7 +33,7 @@ export class PetService {
     }
 
     public findOne(id: string): Promise<Pet | undefined> {
-        this.log.info('Find all pets');
+        this.log.info('Find one pet', id);
         return this.petRepository.findOne({ id });
     }
 
@@ -54,7 +54,6 @@ export class PetService {
     public async delete(id: string): Promise<void> {
         this.log.info('Delete a pet');
         await this.petRepository.delete(id);
-        return;
     }
 
 }
