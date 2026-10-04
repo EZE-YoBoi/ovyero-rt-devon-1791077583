@@ -41,7 +41,7 @@ jobs:
           #   data_extraction · local_tooling · test_harness
           # An unknown name falls back to production (strict), never looser.
           INPUT_GOVERNANCE-PROFILE: production
-          INPUT_FAIL-ON-GATE: 'false'
+          INPUT_FAIL-ON-GATE: 'true'
           INPUT_COMMENT-MODE: summary
           INPUT_MAX-FILES: '200'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
