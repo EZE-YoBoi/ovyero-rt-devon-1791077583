@@ -54,7 +54,6 @@ export class PetService {
     public async delete(id: string): Promise<void> {
         this.log.info('Delete a pet');
         await this.petRepository.delete(id);
-        return;
     }
 
 }
