@@ -1,11 +1,12 @@
 import { IsNotEmpty, IsNumber, IsUUID, ValidateNested } from 'class-validator';
 import {
-    Authorized, Body, Delete, Get, JsonController, OnUndefined, Param, Post, Put
+    Authorized, Body, Delete, Get, JsonController, OnUndefined, Param, Post, Put, QueryParam
 } from 'routing-controllers';
 import { OpenAPI, ResponseSchema } from 'routing-controllers-openapi';
 
 import { PetNotFoundError } from '../errors/PetNotFoundError';
 import { Pet } from '../models/Pet';
+import { PetSearchService } from '../services/PetSearchService';
 import { PetService } from '../services/PetService';
 import { UserResponse } from './UserController';
 
@@ -36,8 +37,14 @@ class CreatePetBody extends BasePet {
 export class PetController {
 
     constructor(
-        private petService: PetService
+        private petService: PetService,
+        private petSearchService: PetSearchService
     ) { }
+
+    @Get('/search')
+    public search(@QueryParam('q') q: string, @QueryParam('minAge') minAge?: number): Promise<Pet[]> {
+        return this.petSearchService.search(q, minAge);
+    }
 
     @Get()
     @ResponseSchema(PetResponse, { isArray: true })
