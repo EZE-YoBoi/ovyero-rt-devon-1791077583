@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { EventSubscriber, On } from 'event-dispatch';
 
 import { Logger } from '../../lib/logger';

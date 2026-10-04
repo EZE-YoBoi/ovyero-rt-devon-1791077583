@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import * as express from 'express';
 import GraphQLHTTP from 'express-graphql';
 import { MicroframeworkLoader, MicroframeworkSettings } from 'microframework-w3tec';

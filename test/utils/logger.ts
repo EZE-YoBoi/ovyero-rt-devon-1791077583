@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { configure, transports } from 'winston';
 
 export const configureLogger = () => {

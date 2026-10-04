@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import compression from 'compression';
 import * as express from 'express';
 import { ExpressMiddlewareInterface, Middleware } from 'routing-controllers';

@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { join } from 'path';
 
 export function getOsEnv(key: string): string {

@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import * as express from 'express';
 import { Service } from 'typedi';
 import { OrmRepository } from 'typeorm-typedi-extensions';

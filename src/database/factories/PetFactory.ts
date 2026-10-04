@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import * as Faker from 'faker';
 import { define } from 'typeorm-seeding';
 import * as uuid from 'uuid';

@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import 'reflect-metadata';
 
 import { bootstrapMicroframework } from 'microframework-w3tec';

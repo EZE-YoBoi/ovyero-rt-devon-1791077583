@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import * as dotenv from 'dotenv';
 import * as path from 'path';
 

@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 export class RepositoryMock<T> {
 
     public one: T;

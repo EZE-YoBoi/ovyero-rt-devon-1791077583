@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { setConnection } from 'typeorm-seeding';
 
 import { migrateDatabase } from '../../utils/database';

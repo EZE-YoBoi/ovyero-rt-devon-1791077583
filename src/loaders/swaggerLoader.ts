@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { defaultMetadataStorage as classTransformerMetadataStorage } from 'class-transformer/storage';
 import { getFromContainer, MetadataStorage } from 'class-validator';
 import { validationMetadatasToSchemas } from 'class-validator-jsonschema';

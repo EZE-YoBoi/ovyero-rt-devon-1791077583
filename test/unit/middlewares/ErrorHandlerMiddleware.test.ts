@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import MockExpressResponse from 'mock-express-response';
 import { HttpError } from 'routing-controllers';
 

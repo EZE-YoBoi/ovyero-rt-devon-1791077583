@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import { EventDispatcher as EventDispatcherClass } from 'event-dispatch';
 import { Container } from 'typedi';
 

@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT — Acme Pets, Inc. */
 import * as bcrypt from 'bcrypt';
 import { Exclude } from 'class-transformer';
 import { IsNotEmpty } from 'class-validator';
